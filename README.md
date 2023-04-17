@@ -1,9 +1,9 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+<a href="https://imgur.com/E3jGjU6"><img src="https://i.imgur.com/E3jGjU6h.png" title="source: imgur.com" /></a>
 
 ## Introduction
 
-I built a mini honeynet in Azure and ingested various log sources into a Log Analytics workspace. I used Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I gathered data for a couple of weeks but only measured security metrics in a span of several days. I applied security control to harden the environment and plot out the data to do a side by side comparison. 
+I built a mini honeynet in Azure and ingested various log sources into a Log Analytics workspace. I used Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I gathered data for a couple of weeks but only measured security metrics in a span of several days. I applied security controls to harden the environment and plot out the data to do a side by side comparison. 
 
 
 <br />
@@ -19,10 +19,10 @@ I built a mini honeynet in Azure and ingested various log sources into a Log Ana
 <br />
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+<a href="https://imgur.com/IPvNyOu"><img src="https://i.imgur.com/IPvNyOu.png" title="source: imgur.com" /></a>
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+<a href="https://imgur.com/SHXf8h7"><img src="https://i.imgur.com/SHXf8h7.png" title="source: imgur.com" /></a>
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -52,16 +52,16 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 4/8/2023, 10:43:04.656 PM
+Stop Time 4/9/2023, 10:43:04.656 PM
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 56005
+| Syslog                   | 986
+| SecurityAlert            | 6
+| SecurityIncident         | 378
+| AzureNetworkAnalytics_CL | 557
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -70,13 +70,13 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 4/12/2023, 8:37:53.280 AM
+Stop Time	4/13/2023, 8:37:53.280 AM
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
+| SecurityEvent            | 17857
+| Syslog                   | 0
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
