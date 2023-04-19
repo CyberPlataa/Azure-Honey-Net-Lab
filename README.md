@@ -18,6 +18,21 @@ I built a mini honeynet in Azure and ingested various log sources into a Log Ana
 
 <br />
 
+## Simulated Attacks
+
+I also took the opportunity to simulate specific attacks via PowerShell scripts or by manually triggering events. The results were observed in Log Analytics Workspace and Sentinel Incident Creation.  
+
+- Linux Brute Force Attempt 
+- AAD Brute Force Success 
+- Windows Brute Force Success
+- Malware Detection (EICAR Test File) 
+- Privilege Escalation  
+
+*Insert Attack Incidents*
+
+
+
+
 ## Architecture Before Hardening / Security Controls
 <a href="https://imgur.com/IPvNyOu"><img src="https://i.imgur.com/IPvNyOu.png" title="source: imgur.com" /></a>
 
