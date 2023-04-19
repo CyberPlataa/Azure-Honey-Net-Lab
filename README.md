@@ -132,7 +132,7 @@ Each organization will have policies related to an incident response that should
 - In this simulated case, an employee had been testing and creating EICAR files. 
 - All information was gathered and analyzed to determine the root cause, extent of damage, and effectiveness of the response. 
 - Report disseminated to all stakeholders.
-- Actions were taken to correct mistakes.
+- Actions were taken to correct mistakes. [*Corrected our firewall settings*](https://github.com/CyberPlataa/Secure-Cloud-Configuration)
 - Lessons-learned review of the incident was conducted.
 
 <br />
