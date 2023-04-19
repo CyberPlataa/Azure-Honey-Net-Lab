@@ -115,7 +115,7 @@ Each organization will have policies related to an incident response that should
 - The Azure lab was set up to ingest all of the logs into Log Analytics Workspace, Sentinel and Defender were configured, and alert rules were put in place. The reason our environment was flooded with alerts and brute force attempts were due to our NSG's not having properly configured firewalls that filtered outside traffic on the internet. 
 
 #### Detection & Analysis
-
+- Created an [*Incident Response*](https://github.com/CyberPlataa/Incident-Response) Section for this.
 - Malware had been detected on a workstation with the potential to compromise the confidentiality, integrity, or availability of the system and data.
 - Assigned alert to an owner, set the severity to "High", and the status to "Active"
 - Identified the primary user account of the system and all systems affected.
@@ -124,7 +124,6 @@ Each organization will have policies related to an incident response that should
 - Sent notifications to appropriate personnel as required by the organization's communication policies.
 
 #### Containment, Eradication & Recovery
-
 - The infected system and any additional systems infected by the malware were quarantined.
 - If the malware was unable to be removed or the system sustained damage, the system would have been shut down and disconnected from the network.
 
